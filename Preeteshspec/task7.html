@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .navbar {
+      background-color: #e55656;
+      border-radius: 10px;
+    }
+
+    .dropdown:hover .navbar-item {
+       background-color: rgb(15, 172, 234);
+       cursor: pointer;
+       border-radius:15%;
+    }
+.dropdown .navbar-item {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color:inherit ;
+  font-family:inherit ;
+}
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+     
+    }
+
+    .dropdown-content {
+      display: none;
+      position:absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      border-radius: 10px;
+      padding: 5px;
+      z-index: 1;
+    }
+  .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+   }
+
+
+   .dropdown:hover .dropdown-content {
+    display: block;
+   }
+
+    .dropdown-item:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="dropdown">
+      <button class="navbar-item">Hover</button>
+      <div class="dropdown-content">
+        <a class="dropdown-item" href="#">Profile</a>
+        <a class="dropdown-item" href="#">Coding Club</a>
+        <a class="dropdown-item" href="#">Repository</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="navbar-item">Click</button>
+      <div class="dropdown-content">
+        <a class="dropdown-item" href="#">Profile</a>
+        <a class="dropdown-item" href="#">Coding Club</a>
+        <a class="dropdown-item" href="#">Repository</a>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
